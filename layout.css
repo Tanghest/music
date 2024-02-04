@@ -18,6 +18,19 @@ font-size: 20px;
   background: #f0f8ff;
   line-height:19px;
   letter-spacing:1px;
+  box-sizing: border-box;
+}
+.box {
+    width: 80%;
+    height: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+    overflow-y: scroll;
+}
+.box p {
+    font-size: 20px;
+    line-height: 1.8;
 }
 
 #container{
@@ -79,6 +92,88 @@ overflow: hidden;
   letter-spacing:1px;
 }
 
+body p {
+  line-height: 1.8;
+}
+
+body h1 {
+  font-size: 36px;
+  margin: 0 0 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+dl dt {
+padding-left:30 px
+  text-align: right;
+  width: 8.5em;
+  padding: 0.5em 1.0em 0.5em 0.5em;
+  position: relative;
+}
+dl dt2 {
+padding-left:30 px
+  text-align: right;
+  width: 8.5em;
+  padding: 0.5em 1.0em 0.5em 0.5em;
+  position: relative;
+}
+
+dl dt3 {
+padding-left:30 px
+  text-align: right;
+  width: 8.5em;
+  padding: 0.5em 1.0em 0.5em 0.5em;
+  position: relative;
+}
+
+dl dt::after {
+  content: ' Live/Ivent';
+  position: absolute;
+  right: -0.55em;
+  top: 10px;
+  font-size: 22px;
+  color: blue;
+}
+dl dt2::after {
+  content: ' Album/EP';
+  position: absolute;
+  right: -0.55em;
+  top: 10px;
+  font-size: 22px;
+  color: green;
+}
+
+dl dt3::after {
+  content: ' Demo';
+  position: absolute;
+  right: -0.55em;
+  top: 10px;
+  font-size: 22px;
+  color: red;
+}
+
+dl dd {
+  width: calc(100% - 8.5em);
+  padding: 0.5em 2.0em 3.0em;
+  border-left: 2px solid #ccc;
+}
+
+dl dd h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.blank_space{
+display:inline-block;
+width:20px;
+}
 #footer{
     position: absolute;/*←絶対位置*/
     bottom: -60px; /*下に固定*/
@@ -88,11 +183,11 @@ overflow: hidden;
     width: 100%;
     color: #ffffff;
     padding: 12px 0px;
-    height: 20px;
+    height: 35px;
     font-size: 18px;
     letter-spacing:2px;
     vertical-align: top;  
-    line-height:5px;
+    line-height:8px;
 }
 
 
